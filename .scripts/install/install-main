@@ -1,6 +1,0 @@
-# Main install file. Runs all other install files
-
-. ./install-updates
-. ./install-software
-. ./install-terminal-software
-. ./install-vim-plugins
