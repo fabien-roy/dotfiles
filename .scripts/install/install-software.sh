@@ -11,7 +11,7 @@ sudo apt-get install git
 sudo apt-get install meld
 
 # Python
-sudo apt-get install python3.4
+sudo apt-get install python2.7
 
 # Docker
 sudo apt-get install docker
