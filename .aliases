@@ -1,0 +1,18 @@
+# My favorite aliases
+
+# Docker
+alias dc="docker-compose"
+alias dcr="docker-compose run"
+alias dcu="docker-compose up"
+
+# Git
+alias gc="git commit -m"
+alias ga="git add ."
+alias gpl="git pull"
+alias gps="git push"
+alias gd="git diff"
+alias gm="git merge"
+
+# Fucking necessary
+alias nano="vim"
+alias "sudo apt-get install nano"="echo 'Go fuck yourself'"
