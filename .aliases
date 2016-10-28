@@ -15,4 +15,3 @@ alias gm="git merge"
 
 # Fucking necessary
 alias nano="vim"
-alias "sudo apt-get install nano"="echo 'Go fuck yourself'"
