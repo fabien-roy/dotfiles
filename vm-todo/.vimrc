@@ -4,13 +4,18 @@ set number
 syntax on
 filetype plugin indent on
 
+" Solarized
+set background=dark
+colorscheme solarized
+
 " Powerline
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 set laststatus=2
-" set t_Co=256
+set t_Co=256
 
 " NERDTree
 autocmd VimEnter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -31,5 +36,3 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
-
-" Oh my zsh
