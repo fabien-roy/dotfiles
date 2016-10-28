@@ -1,6 +1,7 @@
 execute pathogen#infect()
 
 set number
+set cursorline
 syntax on
 filetype plugin indent on
 
