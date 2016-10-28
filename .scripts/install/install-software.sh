@@ -1,9 +1,9 @@
 # Install some of my favorite software
 
-# File browser
-sudo apt-get install thunar
+# File browser (Midnight commander)
+sudo apt-get install mc
 
-# Internet browser
+# Internet browser (IceCat)
 sudo apt-get install icecat
 
 # Git
@@ -11,7 +11,7 @@ sudo apt-get install git
 sudo apt-get install meld
 
 # Python
-sudo apt-get install python2.7
+sudo apt-get install python3.4
 
 # Docker
 sudo apt-get install docker
