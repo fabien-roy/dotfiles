@@ -15,3 +15,6 @@ sudo apt-get install python2.7
 
 # Docker
 sudo apt-get install docker
+
+# Curl
+sudo apt-get install curl
