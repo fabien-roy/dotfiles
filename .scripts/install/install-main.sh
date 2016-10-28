@@ -5,3 +5,4 @@
 . ./install-terminal.sh
 . ./install-git-setup.sh
 . ./install-vim-plugins.sh
+. ./install-powerline.sh
