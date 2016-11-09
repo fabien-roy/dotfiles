@@ -1,4 +1,7 @@
-# My favorite aliases
+# Aliases
+
+# TMUX interfaces
+alias interdv="~/.scripts/interface-docker-vim.sh"
 
 # Docker
 alias dc="docker-compose"
@@ -7,11 +10,8 @@ alias dcu="docker-compose up"
 
 # Git
 alias gc="git commit -m"
+alias gl="git log"
 alias ga="git add ."
-alias gpl="git pull"
-alias gps="git push"
-alias gd="git diff"
 alias gm="git merge"
-
-# Fucking necessary
-alias nano="vim"
+alias gc="git checkout"
+alias gb="git branch"

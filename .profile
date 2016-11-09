@@ -21,7 +21,9 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# Because fuck not being UTF-8
-export LC_ALL=fr_CA.UTF-8
-export LANG=fr_CA.UTF-8
-export LANGUAGE=fr_CA.UTF-8
+if [ -d "$HOME/.local/bin" ]; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+export ANDROID_HOME="/home/fabien/android/Sdk"
+PATH=${PATH}:"$ANDROID_HOME/tools":"$ANDROID_HOME/platform-tools"

@@ -1,11 +1,8 @@
-# TMUX
-tmux
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/royf/.oh-my-zsh
+  export ZSH=/home/fabien/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -54,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bower debian common-aliases docker docker-compose ember-cli emoji git heroku man node postgres python rails rake sudo tmux)
+plugins=(bower, colorize, debian, docker-compose, docker, git, gulp, heroku, man, postgres. rails, rake, sudo, tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,4 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval `dircolors ~/.solarized/dircolors-solarized/dircolors.ansi-dark`
+DEFAULT_USER="fabien"
+
+# For aliases
+source $HOME/.zsh_aliases
