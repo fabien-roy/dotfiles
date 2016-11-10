@@ -1,4 +1,23 @@
-execute pathogen#infect()
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+Plugin 'kien/ctrlp.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'valloric/youcompleteme'
+Plugin 'godlygeek/tabular'
+Plugin 'altercation/vim-colors-solarized'
+
+call vundle#end()
 
 syntax on
 filetype plugin indent on
@@ -20,16 +39,16 @@ map <C-n>: :NERDTreeToggle<CR>
 
 " Nerdtree git plugin
 let g:NERDTreeIndicatorMapCustom = {
- "Modified"  : "m",
- "Staged"    : "+",
- "Untracked" : "*",
- "Renamed"   : ">",
- "Unmerged"  : "=",
- "Deleted"   : "x",
- "Dirty"     : "X",
- "Clean"     : "o",
- "Unknown"   : "?"
-}
+ \   "Modified"  : "m",
+ \   "Staged"    : "+",
+ \   "Untracked" : "*",
+ \   "Renamed"   : ">",
+ \   "Unmerged"  : "=",
+ \   "Deleted"   : "x",
+ \   "Dirty"     : "X",
+ \   "Clean"     : "o",
+ \   "Unknown"   : "?"
+ \  }
 
 " NERDcommenter
 filetype plugin on
