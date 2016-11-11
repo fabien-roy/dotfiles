@@ -16,6 +16,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'valloric/youcompleteme'
 Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
 
 call vundle#end()
 
@@ -96,3 +97,14 @@ ino { {}<left>
 ino {<CR> {<CR>}<ESC>O>
 
 hi Normal ctermbg=none
+
+" Store temporary files in a central spot
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
+" Move around splits with <c-hjkl>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l"
