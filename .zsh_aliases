@@ -1,3 +1,4 @@
+
 # Aliases
 
 # TMUX interfaces
@@ -13,5 +14,18 @@ alias gc="git commit -m"
 alias gl="git log"
 alias ga="git add ."
 alias gm="git merge"
+alias gr="git rebase"
 alias gc="git checkout"
 alias gb="git branch"
+alias gpl="git pull"
+alias gps="git push"
+
+# Other
+alias zo="zdg-open"
+alias pia="/home/fabien/.pia_manager/pia_manager/run.sh > /dev/null 2>&1 &"
+alias lock="gnome-screensaver-command -l"
+
+# Display
+alias disp-optik="xrandr --output eDP-1-1 --mode 1920x1080 --output HDMI-1-2 --mode 2560x1080 --right-of eDP-1-1 --output VGA-1-1 --mode 1920x1080 --right-of HDMI-1-2"
+alias disp-home="xrandr --output eDP-1-1 --mode 1920x1080 --output HDMI-1-2 --mode 1920x1080 --right-of eDP-1-1"
+alias disp-mirror="xrandr --output eDP-1-1 --mode 1920x1080 --output HDMI-1-2 --same-as eDP-1-1"

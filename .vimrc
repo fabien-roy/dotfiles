@@ -16,7 +16,9 @@ Plugin 'majutsushi/tagbar'
 Plugin 'valloric/youcompleteme'
 Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'dsawardekar/ember.vim'
 
 call vundle#end()
 
@@ -34,22 +36,33 @@ set expandtab
 set number ic hls is cursorline
 set nocp
 
+" Store temporary files in a central spot
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
+" Move around splits with <c-hjkl>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
 " Nerdtree
 autocmd vimenter * NERDTree
 map <C-n>: :NERDTreeToggle<CR>
 
 " Nerdtree git plugin
 let g:NERDTreeIndicatorMapCustom = {
- \   "Modified"  : "m",
- \   "Staged"    : "+",
- \   "Untracked" : "*",
- \   "Renamed"   : ">",
- \   "Unmerged"  : "=",
- \   "Deleted"   : "x",
- \   "Dirty"     : "X",
- \   "Clean"     : "o",
- \   "Unknown"   : "?"
- \  }
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
 
 " NERDcommenter
 filetype plugin on
@@ -78,12 +91,12 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " closetag.vim
-" filenames like *.xml, *.html, *.xhtml, ...
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
 
 " Solarized
 syntax enable
 set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
 
 " Tagbar
@@ -98,13 +111,5 @@ ino {<CR> {<CR>}<ESC>O>
 
 hi Normal ctermbg=none
 
-" Store temporary files in a central spot
-set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-
-" Move around splits with <c-hjkl>
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l"
+" Airline theme
+let g:airline_theme='solarized dark'
