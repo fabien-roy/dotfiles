@@ -112,4 +112,5 @@ ino {<CR> {<CR>}<ESC>O>
 hi Normal ctermbg=none
 
 " Airline theme
-let g:airline_theme='solarized dark'
+let g:airline_theme='solarized'
+let g:airline_solarized_dark_inactive_border = 1
