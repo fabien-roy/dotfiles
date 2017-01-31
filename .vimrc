@@ -19,6 +19,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dsawardekar/ember.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-haml'
+" Plugin 'kbarrette/mediummode'
 
 call vundle#end()
 
@@ -112,5 +115,5 @@ ino {<CR> {<CR>}<ESC>O>
 hi Normal ctermbg=none
 
 " Airline theme
-let g:airline_theme='solarized'
-let g:airline_solarized_dark_inactive_border = 1
+" let g:airline_theme='solarized'
+" let g:airline_solarized_dark_inactive_border = 1

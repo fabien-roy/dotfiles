@@ -1,0 +1,6 @@
+! My colors, following this color scheme : https://coolors.co/011627-a5a5a5-f6f7f8-2274a5-d64937
+*cs-darker:         #011627
+*cs-dark:           #A5A5A5
+*cs-light:          #f6f7f8
+*cs-sec-accent:     #2274A5
+*cs-pri-accent:     #D64937
