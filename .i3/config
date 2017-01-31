@@ -22,6 +22,7 @@ set_from_resource $cyan        color14 #000000
 set_from_resource $darkwhite   color7  #000000
 set_from_resource $white       color15 #000000
 
+# Current colorscheme in .Xresources
 set_from_resource $cs-darker        cs-darker
 set_from_resource $cs-dark          cs-dark
 set_from_resource $cs-light         cs-light
@@ -38,17 +39,17 @@ gaps outer 5
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $cs-darker          $cs-sec-accent     $cs-light            #00ff00
+client.focused          $cs-darker          $cs-darker         $cs-light            #00ff00
 client.unfocused        $cs-darker          $cs-darker         $cs-dark             #00ff00
 client.focused_inactive $cs-darker          $cs-darker         $cs-dark             #00ff00
 client.urgent           $cs-pri-accent      $cs-pri-accent     $cs-light            #00ff00
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
-set $up     l
+set $up     j
 set $down   k
-set $left   j
-set $right  semicolon
+set $left   h
+set $right  l
 
 # Use Mouse+$alt to drag floating windows to their wanted position
 floating_modifier $alt
@@ -60,33 +61,31 @@ bindsym $alt+Return exec i3-sensible-terminal
 bindsym $alt+Shift+q kill
 
 # start dmenu (a program launcher)
-# bindsym $alt+d exec dmenu_run
-# bindsym $alt+d exec rofi -show run -lines 4 -eh 2 -width 100 -padding 450 -opacity "85" -bw 0 -bc "$cs-darker" -bg "$cs-darker" -fg "$cs-light" -hlbg "$cs-darker" -hlfg "#688394" -font "monospace 18"
-bindsym $alt+d exec rofi -show run -width 1680 -fg "#D64937" -bg "#3D3D3D" -hlfg "#3D3D3D" -hlbg "#D64937" -bc "#3D3D3D" -location 0 -lines 15 -bw 0 -font "MonacoB 16" -padding 300 -separator-style none -opacity 80
+bindsym $alt+d exec rofi -show run -width 1680 -fg "$cs-pri-accent" -bg "$cs-darker" -hlfg "$cs-darker" -hlbg "$cs-pri-accent" -bc "$cs-darker" -location 0 -lines 15 -bw 0 -font "MonacoB 16" -padding 300 -separator-style none -opacity 80
 
 # change focus
-bindsym $alt+h focus left
-bindsym $alt+j focus down
-bindsym $alt+k focus up
-bindsym $alt+l focus right
+bindsym $alt+$up    focus up
+bindsym $alt+$down  focus down
+bindsym $alt+$left  focus left
+bindsym $alt+$right focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $alt+Left focus left
-bindsym $alt+Down focus down
-bindsym $alt+Up focus up
+bindsym $alt+Up    focus up
+bindsym $alt+Down  focus down
+bindsym $alt+Left  focus left
 bindsym $alt+Right focus right
 
 # move focused window
-bindsym $alt+Shift+h move left
-bindsym $alt+Shift+j move down
-bindsym $alt+Shift+k move up
-bindsym $alt+Shift+l move right
+bindsym $alt+Shift+$up    move up
+bindsym $alt+Shift+$down  move down
+bindsym $alt+Shift+$left  move left
+bindsym $alt+Shift+$right move right
 
 # alternatively, you can use the cursor keys:
-bindsym $alt+Shift+Left move left
-bindsym $alt+Shift+Down move down
-bindsym $alt+Shift+Up move up
-bindsym $alt+Shift+Right move right
+bindsym $alt+Shift+Left   move left
+bindsym $alt+Shift+Down   move down
+bindsym $alt+Shift+Up     move up
+bindsym $alt+Shift+Right  move right
 
 # split in horizontal orientation
 bindsym $alt+Shift+v split h
@@ -162,33 +161,29 @@ bindsym $alt+F10 exec "amixer -D pulse set Master 1+ toggle"
 # volume with special buttons
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
-bindsym XF86AudioMute exec "amixer -D pulse set Master 1+ toggle"
+bindsym XF86AudioMute        exec "amixer -D pulse set Master 1+ toggle"
 
 # reload the configuration file
 bindsym $alt+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $alt+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $alt+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $alt+Shift+e exec "i3-nagbar -t warning -m 'Hackerman, êtes-vous vraiment certain de vouloir quitter?' -b 'QUITTER LE HACKING-STATION' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym $up    resize grow   height 10 px or 10 ppt
+        bindsym $down  resize shrink height 10 px or 10 ppt
+        bindsym $right resize grow   width  10 px or 10 ppt
+        bindsym $left  resize shrink width  10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Up    resize grow   height 10 px or 10 ppt
+        bindsym Down  resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow   width  10 px or 10 ppt
+        bindsym Left  resize shrink width  10 px or 10 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -205,7 +200,7 @@ bar {
 
 	colors {
 	  background $cs-darker
-	  separator #757575
+	  separator  $cs-dark
 	  #                  border             background         text
 	  focused_workspace  $cs-darker         $cs-darker         $cs-light
 	  inactive_workspace $cs-darker         $cs-darker         $cs-dark
@@ -217,17 +212,17 @@ bar {
 bindsym $alt+shift+x exec gnome-screensaver-command -l
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessUp   exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Touchpad controls
-bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+# bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPlay  exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioNext  exec playerctl next
+bindsym XF86AudioPrev  exec playerctl previous
 
 # AudioPulse changer
 bindsym $alt+Shift+i exec /home/fabien/.i3/pulseaudiochanger.sh
