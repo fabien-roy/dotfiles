@@ -17,7 +17,7 @@ if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-if [ -f "$HOME/.config/.Xresources"];then
+if [ -f "$HOME/.config/.Xresources" ];then
   xrdb -merge $HOME/.config/.Xresources
 fi
 

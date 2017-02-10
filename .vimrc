@@ -50,6 +50,12 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+" Move the splits arround!
+nmap <silent> <c-s-k> <C-W>k
+nmap <silent> <c-s-j> <C-W>j
+nmap <silent> <c-s-h> <C-W>h
+nmap <silent> <c-s-l> <C-W>l
+
 " Nerdtree
 autocmd vimenter * NERDTree
 map <C-n>: :NERDTreeToggle<CR>

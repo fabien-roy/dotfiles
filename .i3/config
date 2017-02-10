@@ -227,6 +227,9 @@ bindsym XF86AudioPrev  exec playerctl previous
 # AudioPulse changer
 bindsym $alt+Shift+i exec /home/fabien/.i3/pulseaudiochanger.sh
 
+# Screenshot
+bindsym $alt+F9 exec "scrot ~/Images/screenshots/%Y-%m-%d%H:%M:%S.png"
+
 # Auto open
 exec xrdb ~/.config/.Xresources
 exec compton -f

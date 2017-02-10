@@ -1,0 +1,9 @@
+[user]
+	email = exilednarwal28@gmail.com
+	name = Fabien Roy
+[credential]
+	helper = cache
+[merge]
+  tool = meld
+[mergetool]
+	keepBackup = false
