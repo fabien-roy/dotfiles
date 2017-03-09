@@ -30,4 +30,4 @@ export ANDROID_HOME="$HOME/android/Sdk"
 PATH=${PATH}:"$ANDROID_HOME/tools":"$ANDROID_HOME/platform-tools"
 
 # android studio is an asshole
-export _JAVA_OPTIONS="-Xms256m -Xmx512m"
+export _JAVA_OPTIONS="-Xms256m -Xmx2048m"
