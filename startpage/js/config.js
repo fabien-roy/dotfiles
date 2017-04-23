@@ -6,6 +6,7 @@ const CONFIG = {
       { key: 'ct', name: 'Calendar', url: 'https://calendar.google.com/calendar/b/1/render#main_7', search: false },
       { key: 'h', name: 'Harvest', url: 'https://optik360.harvestapp.com/time', search: false },
       { key: 'fl', name: 'Flow', url: 'https://app.getflow.com/organizations/342509/teams/290135/my-tasks?sortBy=due&viewMode=row', search: '/organizations/342509/search/{}' },
+      { key: 't', name: 'Trello', url: 'https://trello.com/b/X0FPocAL/kohorde?menu=filter&filter=@exilednarwal28', search: false },
     ] },
     { name: "École", commands: [
       { key: 'o', name: 'Omnivox', url: 'https://cegep-sept-iles.omnivox.ca', search: false },
@@ -18,6 +19,7 @@ const CONFIG = {
       { key: 'cp', name: 'Calendar', url: 'https://calendar.google.com/calendar/b/0/render#main_7', search: false },
       { key: 'r', name: 'Reddit', url: 'https://www.reddit.com', search: '/search?q={}' },
       { key: 'fb', name: 'Facebook', url: 'https://www.facebook.com/home.php', search: '/search/top/?q={}' },
+      { key: 'e', name: 'Evernote', url: 'https://www.evernote.com/Home.action', search: false },
     ] },
     { name: "Média", commands: [
       { key: 'n', name: 'Netflix', url: 'https://www.netflix.com/browse', search: '/search?q={}' },
