@@ -1,9 +1,16 @@
-! My colors, following this color scheme : https://coolors.co/011627-a5a5a5-f6f7f8-2274a5-d64937
+! Old colors, following this color scheme : https://coolors.co/011627-a5a5a5-f6f7f8-2274a5-d64937
+! *cs-pri-accent:     #D64937
+! *cs-sec-accent:     #2274A5
+! *cs-darker:         #011627
+! *cs-dark:           #A5A5A5
+! *cs-light:          #f6f7f8
+!
+! New colors, following this color scheme : https://coolors.co/ee5f65-7bd8fa-13120d-a5a5a5-d8dbca
 *cs-pri-accent:     #D64937
 *cs-sec-accent:     #2274A5
-*cs-darker:         #011627
+*cs-darker:         #13120D
 *cs-dark:           #A5A5A5
-*cs-light:          #f6f7f8
+*cs-light:          #D8DBCA
 
 ! Solarized https://www.rarst.net/code/solarized/
 *solarized-yellow:  #AA891F

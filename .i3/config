@@ -240,4 +240,4 @@ exec xrdb ~/.config/.Xresources
 exec compton -f
 exec /home/fabien/.pia_manager/pia_manager/run.sh > /dev/null 2>&1 &
 exec xscreensaver -nosplash
-exec_always feh --bg-scale /home/fabien/Images/wallpapers/by_burned-simon_stalenhag.jpg
+exec_always feh --bg-scale /home/fabien/Images/wallpapers/gorillaz_humanz.jpg
