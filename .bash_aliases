@@ -18,10 +18,13 @@ alias disp-optik='xrandr --output eDP-1-1 --mode 1920x1080 --output HDMI-1-2 --m
 alias disp-home='xrandr --output eDP-1-1 --mode 1920x1080 --output HDMI-1-2 --mode 1920x1080 --right-of eDP-1-1'
 alias disp-mirror='xrandr --output eDP-1-1 --mode 1920x1080 --output HDMI-1-2 --same-as eDP-1-1'
 
+# Wine
+if [ -f ~/.wine/dosdevices/c:/Program\ Files/Graphmatica/Graphmatica.exe ]; then
+  alias graphmatica='wine ~/.wine/dosdevices/c:/Program\ Files/Graphmatica/Graphmatica.exe'
+fi
+
 # Other
 alias zo='zdg-open'
 alias pia='/home/fabien/.pia_manager/pia_manager/run.sh > /dev/null 2>&1 &'
 alias lock='gnome-screensaver-command -l'
 alias resize-func='function _resize(){ convert "$1" -resize "$2" _res"$2"_"$1"; };_resize'
-
-alias graphmatica='wine ~/.wine/dosdevices/c:/Program\ Files/Graphmatica/Graphmatica.exe'
