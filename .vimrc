@@ -25,7 +25,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-haml'
 
 " I'm still learning, ok?
-Plugin 'kbarrette/mediummode'
+" "Plugin 'kbarrette/mediummode'
 
 " Color scheme
 Plugin 'altercation/vim-colors-solarized'

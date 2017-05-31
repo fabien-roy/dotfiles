@@ -1,7 +1,9 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/home/fabien/.oh-my-zsh
+#!/usr/bin/zsh
 
-# theme
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/oh-my-zsh
+
+# Theme
 ZSH_THEME="geometry/geometry"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -11,26 +13,17 @@ CASE_SENSITIVE="true"
 # sensitive completion must be off. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
 
-# other settings
-# DISABLE_AUTO_UPDATE="true"
-# export UPDATE_ZSH_DAYS=13
-# DISABLE_LS_COLORS="true"
-# DISABLE_AUTO_TITLE="true"
-# ENABLE_CORRECTION="true"
-# COMPLETION_WAITING_DOTS="true"
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-# HIST_STAMPS="mm/dd/yyyy"
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# plugins
+# Plugins
 plugins=(bower, colorize, debian, docker-compose, docker, git, gulp, heroku, man, postgres. rails, rake, sudo, tmux)
 
 source $ZSH/oh-my-zsh.sh
 
-DEFAULT_USER="fabien"
-
-# For aliases
-source $HOME/.zsh_aliases
+DEFAULT_USER="hackerman"
 
 # For Powerline
 export TERM=xterm-256color
+
+# Alias definitions.
+if [ -f $HOME/.aliases ]; then
+    . $HOME/.aliases
+fi
