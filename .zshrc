@@ -1,7 +1,11 @@
 #!/usr/bin/zsh
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
+
+if [ ! -d $ZSH/themes/geometry ]; then
+  git clone https://github.com/jedahan/geometry $ZSH/themes/geometry 
+fi
 
 # Theme
 ZSH_THEME="geometry/geometry"
