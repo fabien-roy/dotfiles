@@ -30,8 +30,3 @@ DEFAULT_USER="hackerman"
 
 # For Powerline
 export TERM=xterm-256color
-
-# Alias definitions.
-if [ -f $HOME/.aliases ]; then
-    . $HOME/.aliases
-fi
