@@ -12,6 +12,7 @@ alias interdv='$HOME/.scripts/interface-docker-vim.sh'
 alias dc='docker-compose'
 alias dcr='docker-compose run'
 alias dcu='docker-compose up'
+alias dwp="docker-compose run --rm wpcli"
 
 # Display
 alias disp-optik='xrandr --output eDP-1-1 --mode 1920x1080 --output HDMI-1-2 --mode 2560x1080 --right-of eDP-1-1 --output VGA-1-1 --mode 1920x1080 --right-of HDMI-1-2'
