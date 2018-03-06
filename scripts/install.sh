@@ -7,7 +7,15 @@ if [ "$(whoami)" != "root" ]; then
 fi
 
 # Install everything
-apt-get install vim zsh tmux git build-essential cmake python-dev python3-dev
+apt-get install vim
+apt-get install zsh
+apt-get install tmux
+apt-get install git
+apt-get install build-essential
+apt-get install cmake
+apt-get install autojump
+apt-get install python-dev
+apt-get install python3-dev
 
 # Install oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"

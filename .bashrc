@@ -66,5 +66,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# z
+. /usr/local/bin/z/z.sh
+
 # Weird libssl bug
 LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/lib/x86_64-linux-gnu:/lib/i386-linux-gnu:$LD_LIBRARY_PATH
