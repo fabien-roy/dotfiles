@@ -11,18 +11,20 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-fugitive'
+Plugin 'majutsushi/tagbar'
+Plugin 'kien/ctrlp.vim'
+
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
-Plugin 'kien/ctrlp.vim'
-Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-fugitive'
 Plugin 'valloric/youcompleteme'
+
 Plugin 'godlygeek/tabular'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
 Plugin 'dsawardekar/ember.vim'
 Plugin 'mattn/emmet-vim'
-Plugin 'tpope/vim-haml'
 
 " I'm still learning, ok?
 " "Plugin 'kbarrette/mediummode'
@@ -118,7 +120,7 @@ let g:NERTrimTrailingWhitespace = 1
 set laststatus=2
 set t_Co=256
 
-" ctrlP
+ctrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Syntastic
@@ -153,5 +155,5 @@ ino {<CR> {<CR>}<ESC>O>
 hi Normal ctermbg=none
 
 " Airline theme
-" let g:airline_theme='solarized'
-" let g:airline_solarized_dark_inactive_border = 1
+let g:airline_theme='solarized'
+let g:airline_solarized_dark_inactive_border = 1
