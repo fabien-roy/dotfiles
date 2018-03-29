@@ -1,0 +1,12 @@
+# bind-key -t vi-copy 'y' copy-pipe "xclip -sel clip -i
+set -g status-left-length 0
+set -g status-right-length 0
+
+# Make new panes use same path (i like that feature)
+bind '"' split-window -c    "#{pane_current_path}"
+bind %   split-window -h -c "#{pane_current_path}"
+bind c   new-window   -c    "#{pane_current_path}"
+
+# pane movement
+bind-key j command-prompt -p "join pane from:"  "join-pane -s '%%'"
+bind-key s command-prompt -p "send pane to:"  "join-pane -t '%%'"

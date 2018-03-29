@@ -60,3 +60,8 @@ vim -c 'PluginInstall' -c 'qa!'
 
 # Set up YouCompleteMe.vim
 sh $HOME/.vim/bundle/YouCompleteMe/install.py --clang-completer
+
+tmux
+zsh
+
+echo "Et voilà."

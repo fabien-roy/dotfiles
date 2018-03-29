@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Call simple script!
+if [ "$1" == "simple" ]; then
+  sh $HOME/.dotfiles/scripts/install.simple.sh
+  exit 1
+fi
+
 # Links 
 ln -s $HOME/.dotfiles/.aliases    $HOME/.aliases
 ln -s $HOME/.dotfiles/.bashrc     $HOME/.bashrc
