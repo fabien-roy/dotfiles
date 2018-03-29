@@ -1,24 +1,13 @@
-[user]
-  email = fabienroy28@gmail.com
-  name = Fabien Roy
 [core]
   editor = vim
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
   excludesfile = ~/.gitignore
-[web]
-  browser = google-chrome
 [credential]
   helper = cache
-[merge]
-  tool = meld
 [mergetool]
   keepBackup = false
-[diff]
-  tool = meld
 [difftool]
   prompt = false
-[github]
-  user = ExiledNarwal28
 [alias]
 	a = add --all
 	ai = add -i

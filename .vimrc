@@ -120,8 +120,9 @@ let g:NERTrimTrailingWhitespace = 1
 set laststatus=2
 set t_Co=256
 
+" TODO : Doesn't work??
 ctrlP
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Syntastic
 set statusline+=%#warningmsg#
