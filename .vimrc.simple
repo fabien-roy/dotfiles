@@ -15,16 +15,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'godlygeek/tabular'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'scrooloose/nerdcommenter'
-" Plugin 'tpope/vim-fugitive'
-" Plugin 'kien/ctrlp.vim'
-" Plugin 'majutsushi/tagbar'
-" Plugin 'valloric/youcompleteme'
-" Plugin 'dsawardekar/ember.vim'
-" Plugin 'mattn/emmet-vim'
-
-" I'm still learning, ok?
-" "Plugin 'kbarrette/mediummode'
 
 " Color scheme
 Plugin 'altercation/vim-colors-solarized'
@@ -105,21 +95,6 @@ let g:NERDTreeIndicatorMapCustom = {
 \ "Unknown"   : "?"
 \ }
 
-" NERDcommenter
-" let g:NERDSpaceDelims = 1
-" let g:NERDCompactSexyComs = 1
-" let g:NERDDefaultAlign = 'left'
-" let g:NERDAltDelims_java = 1
-" let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-" let g:NERDCommentEmptyLines = 1
-" let g:NERTrimTrailingWhitespace = 1
-
-" set laststatus=2
-" set t_Co=256
-
-" ctrlP
-" set runtimepath^=~/.vim/bundle/ctrlp.vim
-
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -138,19 +113,3 @@ syntax enable
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
-
-" Tagbar
-" nmap <F8> :TagbarToggle<CR>
-
-" ino " ""<left>
-" ino ' ''<left>
-" ino ( ()<left>
-" ino [ []<left>
-" ino { {}<left>
-" ino {<CR> {<CR>}<ESC>O>
-
-" hi Normal ctermbg=none
-
-" Airline theme
-" let g:airline_theme='solarized'
-" let g:airline_solarized_dark_inactive_border = 1
