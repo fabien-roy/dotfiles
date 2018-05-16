@@ -6,6 +6,17 @@ if [ "$1" == "simple" ]; then
   exit 1
 fi
 
+# Remove files to be linked
+rm $HOME/.aliases
+rm $HOME/.bashrc
+rm $HOME/.env
+rm $HOME/.gitconfig
+rm $HOME/.profile
+rm $HOME/.tmux.conf
+rm $HOME/.vimrc
+rm $HOME/.zprofile
+rm $HOME/.zshrc
+
 # Links 
 ln -s $HOME/.dotfiles/.aliases    $HOME/.aliases
 ln -s $HOME/.dotfiles/.bashrc     $HOME/.bashrc

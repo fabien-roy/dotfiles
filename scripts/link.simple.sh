@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# Remove files to be linked
+rm $HOME/.aliases
+rm $HOME/.bashrc
+rm $HOME/.env
+rm $HOME/.gitconfig
+rm $HOME/.profile
+rm $HOME/.tmux.conf
+rm $HOME/.vimrc
+rm $HOME/.zprofile
+rm $HOME/.zshrc
+
 # Links 
 ln -s $HOME/.dotfiles/.aliases.simple    $HOME/.aliases
 ln -s $HOME/.dotfiles/.bashrc.simple     $HOME/.bashrc
