@@ -41,8 +41,7 @@ rm $HOME/.zprofile
 rm $HOME/.zshrc
 
 # Link files
-ln -s $HOME/.dotfiles/.vimrc.simple      $HOME/.vimrc
-
+ln -s $HOME/.dotfiles/.vimrc      $HOME/.vimrc
 ln -s $HOME/.dotfiles/.aliases    $HOME/.aliases
 ln -s $HOME/.dotfiles/.bashrc     $HOME/.bashrc
 ln -s $HOME/.dotfiles/.env        $HOME/.env
