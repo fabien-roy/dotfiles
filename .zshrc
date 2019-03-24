@@ -4,15 +4,15 @@
 export ZSH=$HOME/.oh-my-zsh
 
 if [ ! -d $ZSH/themes/geometry ]; then
-  git clone https://github.com/jedahan/geometry $ZSH/themes/geometry 
+  git clone https://github.com/geometry-zsh/geometry $ZSH/themes/geometry 
 fi
 
 # Theme
 ZSH_THEME="geometry/geometry"
 
 # Theme config
-GEOMETRY_PROMPT_PLUGINS=(virtualenv docker_machine exec_time git hg)
-PROMPT_GEOMETRY_EXEC_TIME=true
+# GEOMETRY_PROMPT_PLUGINS=(virtualenv docker_machine exec_time git hg)
+# PROMPT_GEOMETRY_EXEC_TIME=true
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
