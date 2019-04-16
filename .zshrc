@@ -22,7 +22,7 @@ CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
 
 # Plugins
-plugins=(bower, colorize, debian, docker-compose, docker, git, gulp, heroku, man, postgres. rails, rake, sudo, tmux)
+# plugins=(bower, colorize, debian, docker-compose, docker, git, gulp, heroku, man, postgres. rails, rake, sudo, tmux)
 
 source $ZSH/oh-my-zsh.sh
 
