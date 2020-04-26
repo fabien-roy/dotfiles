@@ -20,6 +20,7 @@ apt-get install autojump
 
 apt-get install build-essential
 apt-get install cmake
+
 apt-get install python3-dev
 apt-get install python3-pip
 

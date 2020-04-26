@@ -20,8 +20,3 @@ fi
 if [ -f $HOME/.aliases ]; then
     . $HOME/.aliases
 fi
-
-# Environment variables
-if [ -f $HOME/.env ]; then
-    . $HOME/.env
-fi
