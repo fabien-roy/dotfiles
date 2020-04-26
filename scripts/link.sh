@@ -7,7 +7,6 @@ fi
 
 rm $HOME/.aliases
 rm $HOME/.bashrc
-rm $HOME/.env
 rm $HOME/.gitconfig
 rm $HOME/.profile
 rm $HOME/.tmux.conf
@@ -17,7 +16,6 @@ rm $HOME/.zshrc
 
 ln -s $HOME/.dotfiles/.aliases    $HOME/.aliases
 ln -s $HOME/.dotfiles/.bashrc     $HOME/.bashrc
-ln -s $HOME/.dotfiles/.env        $HOME/.env
 ln -s $HOME/.dotfiles/.gitconfig  $HOME/.gitconfig
 ln -s $HOME/.dotfiles/.profile    $HOME/.profile
 ln -s $HOME/.dotfiles/.tmux.conf  $HOME/.tmux.conf
