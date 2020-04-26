@@ -1,35 +1,12 @@
 #!/bin/bash
 
-# Aliases
-
-# Update
 alias gimme='sudo sh -c "apt-get -y update; apt-get -y dist-upgrade; apt-get -y autoremove; apt-get -y autoclean"'
 
-# TMUX interfaces
-alias interdv='$HOME/.scripts/interface-docker-vim.sh'
-
-# Docker
 alias dc='docker-compose'
 alias dcr='docker-compose run'
 alias dcu='docker-compose up'
 alias dwp="docker-compose run --rm wpcli"
 
-# Display
-alias disp-optik='xrandr --output eDP-1-1 --mode 1920x1080 --output HDMI-1-2 --mode 2560x1080 --right-of eDP-1-1 --output VGA-1-1 --mode 1920x1080 --right-of HDMI-1-2'
-alias disp-home='xrandr --output eDP-1-1 --mode 1920x1080 --output HDMI-1-2 --mode 1920x1080 --right-of eDP-1-1'
-alias disp-mirror='xrandr --output eDP-1-1 --mode 1920x1080 --output HDMI-1-2 --same-as eDP-1-1'
-
-# Wine
-if [ -f $HOME/.wine/dosdevices/c:/Program\ Files/Graphmatica/Graphmatica.exe ]; then
-  alias graphmatica='wine $HOME/.wine/dosdevices/c:/Program\ Files/Graphmatica/Graphmatica.exe'
-fi
-
-# Private Internet Access
-if [ -f $HOME/.pia_manager/pia_manager/run.sh ]; then
-  alias pia='$HOME/.pia_manager/pia_manager/run.sh > /dev/null 2>&1 &'
-fi
-
-# Enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
