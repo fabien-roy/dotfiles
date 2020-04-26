@@ -1,5 +1,5 @@
-set nocompatible " be iMproved, required
-filetype off     " required
+set nocompatible
+filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -23,12 +23,6 @@ Plugin 'godlygeek/tabular'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-Plugin 'dsawardekar/ember.vim'
-Plugin 'mattn/emmet-vim'
-
-" I'm still learning, ok?
-" "Plugin 'kbarrette/mediummode'
-
 " Color scheme
 Plugin 'altercation/vim-colors-solarized'
 
@@ -49,7 +43,7 @@ set expandtab
 " Showing line numbers
 set number 
 set numberwidth=3
-set relativenumber
+" set relativenumber
 set ruler
 
 " Switching normal to relative numbers"
