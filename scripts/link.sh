@@ -1,12 +1,10 @@
 #!/bin/bash
 
-# Call simple script!
 if [ "$1" == "simple" ]; then
   sh $HOME/.dotfiles/scripts/install.simple.sh
   exit 1
 fi
 
-# Remove files to be linked
 rm $HOME/.aliases
 rm $HOME/.bashrc
 rm $HOME/.env
@@ -17,7 +15,6 @@ rm $HOME/.vimrc
 rm $HOME/.zprofile
 rm $HOME/.zshrc
 
-# Links 
 ln -s $HOME/.dotfiles/.aliases    $HOME/.aliases
 ln -s $HOME/.dotfiles/.bashrc     $HOME/.bashrc
 ln -s $HOME/.dotfiles/.env        $HOME/.env

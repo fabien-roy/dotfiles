@@ -1,12 +1,10 @@
 #!/bin/bash
 
-# Check if user is root
 if [ "$(whoami)" != "root" ]; then 
   echo "You need to execute this script as sudo"
   exit 1
 fi
 
-# Install everything
 apt-get install vim
 apt-get install zsh
 apt-get install git
@@ -14,7 +12,6 @@ apt-get install git
 apt-get install tmux
 apt-get install autojump
 
-# Remove files to be linked
 rm $HOME/.aliases
 rm $HOME/.bashrc
 rm $HOME/.env
@@ -24,7 +21,6 @@ rm $HOME/.tmux.conf
 rm $HOME/.vimrc
 rm $HOME/.zprofile
 
-# Link files
 ln -s $HOME/.dotfiles/.aliases.simple    $HOME/.aliases
 ln -s $HOME/.dotfiles/.bashrc.simple     $HOME/.bashrc
 ln -s $HOME/.dotfiles/.env               $HOME/.env
@@ -34,10 +30,8 @@ ln -s $HOME/.dotfiles/.tmux.conf.simple  $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/.vimrc.simple      $HOME/.vimrc
 ln -s $HOME/.dotfiles/.zprofile          $HOME/.zprofile
 
-# Installs Vundle.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# Set up vim
 vim -c 'PluginInstall' -c 'qa!'
 
 tmux
