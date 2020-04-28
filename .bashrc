@@ -1,5 +1,13 @@
 #!/bin/bash
 
+if [ -f $HOME/.env ]; then
+  source $HOME/.env
+fi
+
+if [ -f $HOME/.aliases ]; then
+  source $HOME/.aliases
+fi
+
 # If not running interactively, don't do anything
 case $- in
   *i*) ;;

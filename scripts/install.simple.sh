@@ -12,21 +12,7 @@ apt-get install git
 apt-get install tmux
 apt-get install autojump
 
-rm $HOME/.aliases
-rm $HOME/.bashrc
-rm $HOME/.gitconfig
-rm $HOME/.profile
-rm $HOME/.tmux.conf
-rm $HOME/.vimrc
-rm $HOME/.zprofile
-
-ln -s $HOME/.dotfiles/.aliases.simple    $HOME/.aliases
-ln -s $HOME/.dotfiles/.bashrc            $HOME/.bashrc
-ln -s $HOME/.dotfiles/.gitconfig.simple  $HOME/.gitconfig
-ln -s $HOME/.dotfiles/.profile           $HOME/.profile
-ln -s $HOME/.dotfiles/.tmux.conf.simple  $HOME/.tmux.conf
-ln -s $HOME/.dotfiles/.vimrc.simple      $HOME/.vimrc
-ln -s $HOME/.dotfiles/.zprofile          $HOME/.zprofile
+source ./link.simple.sh
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
