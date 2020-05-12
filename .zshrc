@@ -26,7 +26,3 @@ source $ZSH/oh-my-zsh.sh
 DEFAULT_USER="hackerman"
 
 export TERM=xterm-256color
-
-if [ "$TMUX" = "" ]; then 
-  tmux;
-fi
