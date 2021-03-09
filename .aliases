@@ -8,6 +8,7 @@ alias pip='pip3'
 alias dc='docker-compose'
 alias dcr='docker-compose run'
 alias dcu='docker-compose up'
+alias dcd='docker-compose down'
 alias dwp="docker-compose run --rm wpcli"
 
 if [ -x /usr/bin/dircolors ]; then
