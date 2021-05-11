@@ -1,3 +1,5 @@
+[init]
+  defaultbranch = main
 [user]
   email = fabienroy28@gmail.com
   name = Fabien Roy
@@ -60,6 +62,9 @@
   fp = format-patch
   #############
   fk = fsck
+  #############
+  ffs = flow feature start
+  fbs = flow bugfix start
   #############
   g = grep -p
   #############
