@@ -3,6 +3,7 @@
 [user]
   email = fabienroy28@gmail.com
   name = Fabien Roy
+	signingkey = C949594D83296684
 [core]
   editor = vim
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
@@ -41,6 +42,7 @@
   c = commit
   ca = commit -a
   cm = commit -m
+  csm = commit -S -m
   cem = commit --allow-empty -m
   cam = commit -am
   cd = commit --amend
