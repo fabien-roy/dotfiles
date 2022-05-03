@@ -5,11 +5,27 @@ alias gimme='sudo sh -c "apt-get -y update; apt-get -y dist-upgrade; apt-get -y 
 alias python='python3'
 alias pip='pip3'
 
-alias dc='docker-compose'
-alias dcr='docker-compose run'
-alias dcu='docker-compose up'
-alias dcd='docker-compose down'
-alias dwp="docker-compose run --rm wpcli"
+alias g='git'
+
+alias y='yarn'
+alias ya='yarn add'
+alias yad='yarn add -D'
+alias ys='yarn start'
+alias yd='yarn dev'
+alias yl='yarn lint'
+alias ylf='yarn lint --fix'
+alias yp='yarn prettier'
+alias ypf='yarn prettier --fix'
+alias yt='yarn test'
+alias ytc='yarn test --coverage'
+
+alias dc='docker'
+alias dc='docker compose'
+alias dcr='docker compose run'
+alias dcu='docker compose up'
+alias dcd='docker compose down'
+alias dce='docker compose eject'
+
 
 if [ -d $HOME/Android/Sdk ]; then
   alias sdkmanager=$HOME/Android/Sdk/tools/bin/sdkmanager
