@@ -21,3 +21,4 @@ if [ -f $HOME/.aliases ]; then
     . $HOME/.aliases
 fi
 export GPG_TTY=$(tty)
+. "$HOME/.cargo/env"

@@ -2,22 +2,38 @@
 
 alias gimme='sudo sh -c "apt-get -y update; apt-get -y dist-upgrade; apt-get -y autoremove; apt-get -y autoclean"'
 
-alias python='python3'
-alias pip='pip3'
-
 alias g='git'
 
 alias y='yarn'
-alias ya='yarn add'
-alias yad='yarn add -D'
+alias yi='yarn add'
+alias yid='yarn add -D'
 alias ys='yarn start'
 alias yd='yarn dev'
 alias yl='yarn lint'
-alias ylf='yarn lint --fix'
-alias yp='yarn prettier'
-alias ypf='yarn prettier --fix'
+alias ylf='yarn lint:fix'
+alias yf='yarn format'
+alias yff='yarn format:fix'
 alias yt='yarn test'
-alias ytc='yarn test --coverage'
+alias ytc='yarn test:cov'
+alias yy='yarn yeet'
+
+alias p='pnpm'
+alias pi='pnpm install'
+alias pid='pnpm install -D'
+alias ps='pnpm start'
+alias pd='pnpm dev'
+alias pl='pnpm lint'
+alias plf='pnpm lint:fix'
+alias pf='pnpm format'
+alias pff='pnpm format:fix'
+alias pt='pnpm test'
+alias ptc='pnpm test:cov'
+alias py='pnpm yeet'
+
+alias pc='pnpm lint:fix; pnpm format:fix; pnpm build'
+
+alias python='python3'
+alias pip='pip3'
 
 alias dc='docker'
 alias dc='docker compose'
