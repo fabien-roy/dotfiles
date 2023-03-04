@@ -5,18 +5,14 @@ if [ "$(whoami)" != "root" ]; then
   exit 1
 fi
 
-apt-get install vim
+apt-get install nvim
 apt-get install zsh
 apt-get install git
 
 apt-get install tmux
 apt-get install autojump
 
-source ./link.simple.sh
-
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-vim -c 'PluginInstall' -c 'qa!'
+source ./link.sh
 
 tmux
 zsh
